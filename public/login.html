@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- since this isn't prod I use cdn for simplicity -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="./js/login-bear.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div id="content">
+      <div
+        class="flex justify-center border border-blue-500 rounded-xl p-4 mb-4"
+      >
+        <h1 class="text-2xl font-bold">Log 1<sub>n</sub> = -1</h1>
+      </div>
+
+      <!-- BEAR IMAGE -->
+      <div id="bear-image" class="flex justify-center mb-4">
+        <img
+          src="assets/img/watch_bear_0.png"
+          alt="Bear Image"
+          class="rounded-full size-[8.5rem]"
+        />
+      </div>
+
+      <!-- LOGIN FORM -->
+      <div>
+        <form id="login-form">
+          <div class="flex flex-col gap-y-4">
+            <div class="flex gap-1 justify-center">
+              <input
+                type="text"
+                name="username-login"
+                placeholder="Username"
+                class="focus:ring-2 focus:ring-green-500"
+              />
+              <input
+                type="password"
+                name="password-login"
+                placeholder="Password"
+                class="focus:ring-2 focus:ring-green-500"
+              />
+            </div>
+            <div class="flex justify-center">
+              <button
+                class="w-60 border-2 border-black bg-blue-500 hover:bg-blue-300 rounded-3xl p-2"
+                type="submit"
+              >
+                Login
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="flex justify-center mt-4">
+        <button
+          id="register-button"
+          class="text-blue-500 hover:text-blue-700 underline"
+          type="button"
+        >
+          Register?
+        </button>
+      </div>
+
+      <!-- REGISTER MODAL -->
+      <div
+        id="register-modal"
+        class="hidden fixed inset-0 z-50 bg-black bg-opacity-50"
+      >
+        <div class="flex justify-center items-center h-screen">
+          <div class="bg-white p-8 rounded-lg w-96">
+            <h2 class="text-2xl font-bold mb-4">Register</h2>
+            <form id="register-form">
+              <div class="flex flex-col gap-y-4">
+                <div class="flex flex-col gap-y-1 justify-center">
+                  <input
+                    type="text"
+                    name="username-register"
+                    placeholder="Username"
+                    class="focus:ring-2 focus:ring-green-500"
+                  />
+                  <div id="username-error" class="text-red-500 text-sm"></div>
+                  <input
+                    type="password"
+                    name="password-register"
+                    placeholder="Password"
+                    class="focus:ring-2 focus:ring-green-500"
+                  />
+                  <div id="password-error" class="text-red-500 text-sm"></div>
+                  <input
+                    type="email"
+                    name="email-register"
+                    placeholder="Email"
+                    class="focus:ring-2 focus:ring-green-500"
+                  />
+                  <div id="email-error" class="text-red-500 text-sm"></div>
+                </div>
+                <div class="flex justify-center gap-2">
+                  <button
+                    id="cancel-register"
+                    class="w-60 border-2 border-black bg-blue-500 hover:bg-blue-300 rounded-3xl p-2"
+                    type="button"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    class="w-60 border-2 border-black bg-blue-500 hover:bg-blue-300 rounded-3xl p-2"
+                    type="submit"
+                  >
+                    Register
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
