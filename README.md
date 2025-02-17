@@ -1,5 +1,5 @@
 <h1>Poke API with jQuery & Node.js</h1>
-WIP -TBD, still wonky with patches bits and pieces here and there
+WIP -TBD, still wonky with patches console.log/commented code bits and pieces here and there
 <h2>Installation</h2>
 <ul>
   <li>Clone Repo</li>
