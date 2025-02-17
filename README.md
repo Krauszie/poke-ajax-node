@@ -11,4 +11,16 @@
   <li>Ajax/jQuery</li>
   <li>TailwindCSS</li>
   <li>Node.js</li>
+  <li>Express</li>
+  <li>PostgreSQL</li>
 </ul>
+
+<h2>How To Run</h2>
+<ul>
+  <li>npm start the server</li>
+  <li>http-server -p <port> --cors</li>
+</ul>
+
+<h2>Demo</h2>
+
+
